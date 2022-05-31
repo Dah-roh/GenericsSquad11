@@ -1,6 +1,10 @@
 package Generics;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
+
     public static void main(String[] args) {
 
         Movie taken = new Movie("Action, Thriller",
@@ -23,7 +27,12 @@ public class Main {
         musicCatalog.setCatalog(allTimeLow);
         musicCatalog.setListOfCatalogs(allTimeLow);
 
-        System.out.println(movieCatalog);
-        System.out.println(musicCatalog);
+        LinkedList<String> stringLinkedList = new LinkedList<>();
+        stringLinkedList = stringLinkedList.add(stringLinkedList, "Head");
+        stringLinkedList = stringLinkedList.add(stringLinkedList, "next node");
+
+        stringLinkedList.printLinkedListValues(stringLinkedList);
+//        System.out.println(movieCatalog);
+//        System.out.println(musicCatalog);
     }
 }
